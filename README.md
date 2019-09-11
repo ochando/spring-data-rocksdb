@@ -1,6 +1,6 @@
 # spring-data-rocksdb
 
-
+```
 @Configuration
 public class Config {
 
@@ -14,3 +14,18 @@ public class Config {
         return new RocksDBKeyValueAdapter();
     }
 }
+```
+
+
+```
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-keyvalue</artifactId>
+		</dependency>
+        
+        <dependency>
+			<groupId>org.rocksdb</groupId>
+			<artifactId>rocksdbjni</artifactId>
+			<version>${rocksdb.version}</version>
+		</dependency>
+```
